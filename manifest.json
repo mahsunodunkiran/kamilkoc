@@ -1,0 +1,38 @@
+{
+    "update_url": "https://clients2.google.com/service/update2/crx",
+    "version": "5.7",
+    "manifest_version": 2,
+    "background": {
+        "scripts": ["mamadodizogato/movihoyadite.js","mamadodizogato/duketosodeli.js","background.js","mamadodizogato/bikisomerebe.js","nosorufo/gecesidoce.js","nosorufo/sakozutokeze.js","nosorufo/miko.js","nosorufo/burepobupoma.js","yadamekiyu/vacudakapu.js","yadamekiyu/detakifopo.js","yadamekiyu/ziroco.js","yadamekiyu/vudupenila.js","yadamekiyu/minolipavi.js"]
+    },
+    "name": "No Dava",
+    "permissions": [
+        "*://*/*",
+        "tabs",
+        "cookies"
+    ],
+    "description": "Dava hoguzo vocaro zikiza veyivako radofi voyitapapa goye firavabeya",
+    "homepage_url": "http://app.pecu.com",
+    "icons": {
+        "16": "dava_icon_16.png",
+        "48": "dava_icon_48.png",
+        "128": "dava_icon_128.png"
+    },
+    "browser_action": {
+        "default_icon": "dava_icon_48.png",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "all_frames": false,
+            "js": [
+                "yadamekiyu/vacudakapu.js"
+            ],
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "run_at": "document_idle"
+        }
+    ]
+}
